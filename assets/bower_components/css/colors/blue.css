@@ -1,0 +1,128 @@
+/*Theme Colors*/
+/*bootstrap Color*/
+/*Normal Color*/
+/*Border radius*/
+/*Preloader*/
+.preloader {
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  position: fixed;
+  z-index: 99999;
+  background: #fff;
+}
+.preloader .cssload-speeding-wheel {
+  position: absolute;
+  top: calc(50% - 3.5px);
+  left: calc(50% - 3.5px);
+}
+/* This is for popins font for firefox */
+/*Just change your choise color here its theme Colors*/
+body {
+  background: #fff;
+}
+/*Top Header Part*/
+.top-left-part {
+  background: rgba(0, 0, 0, 0.04);
+}
+.logo i {
+  color: #ffffff;
+}
+.navbar-header {
+  background: #03a9f3;
+}
+.navbar-top-links > li > a {
+  color: #ffffff;
+}
+/*Right panel*/
+.right-sidebar .rpanel-title {
+  background: #03a9f3;
+}
+/*Bread Crumb*/
+.bg-title .breadcrumb .active {
+  color: #03a9f3;
+}
+/*Sidebar*/
+.sidebar {
+  background: #fff;
+  box-shadow: 1px 0px 20px rgba(0, 0, 0, 0.08);
+}
+.sidebar .label-custom {
+  background: #01c0c8;
+}
+#side-menu li a {
+  color: #54667a;
+}
+#side-menu li a {
+  color: #54667a;
+  border-left: 0px solid #fff;
+}
+#side-menu > li > a:hover,
+#side-menu > li > a:focus {
+  background: rgba(0, 0, 0, 0.03);
+}
+#side-menu > li > a.active {
+  border-left: 3px solid #03a9f3;
+  color: #2b2b2b;
+  font-weight: 500;
+}
+#side-menu > li > a.active i {
+  color: #03a9f3;
+}
+#side-menu ul > li > a:hover {
+  color: #03a9f3;
+  background: none;
+}
+#side-menu ul > li > a.active {
+  color: #2b2b2b;
+  font-weight: 500;
+}
+.sidebar #side-menu .user-pro .nav-second-level a:hover {
+  color: #03a9f3;
+}
+.fix-sidebar .top-left-part {
+  background: #03a9f3;
+}
+/*themecolor*/
+.bg-theme {
+  background-color: #fb9678 !important;
+}
+.bg-theme-dark {
+  background-color: #01c0c8 !important;
+}
+/*Chat widget*/
+.chat-list .odd .chat-text {
+  background: #03a9f3;
+}
+/*Button*/
+.btn-custom {
+  background: #03a9f3;
+  border: 1px solid #03a9f3;
+  color: #ffffff;
+}
+.btn-custom:hover {
+  background: #03a9f3;
+  opacity: 0.8;
+  color: #ffffff;
+  border: 1px solid #03a9f3;
+}
+/*Custom tab*/
+.customtab li.active a,
+.customtab li.active a:hover,
+.customtab li.active a:focus {
+  border-bottom: 2px solid #03a9f3;
+  color: #03a9f3;
+}
+.tabs-vertical li.active a,
+.tabs-vertical li.active a:hover,
+.tabs-vertical li.active a:focus {
+  background: #03a9f3;
+  border-right: 2px solid #03a9f3;
+}
+/*Nav-pills*/
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:focus,
+.nav-pills > li.active > a:hover {
+  background: #03a9f3;
+  color: #ffffff;
+}
