@@ -8,49 +8,7 @@ if ($leave_nums == null) {
 }
 $leave_numss=$DB->getColumn("SELECT count(*) from nteam_leave_messages WHERE `intime` = '".$date."'");
   $mysqlversion=$DB->query("select VERSION()")->fetch();
-if($_SESSION['connet']!=true){
-	if(file_get_contents('https://auth.yundayzf.com')){//服务器系统
-		$connect='<font color="green">访问正常</font>';
-		$_SESSION['connet']==true;//防止过多访问造成卡顿
-	}else{
-		$connect='<font color="red">连接失败</font>';
-		$_SESSION['connet']==true;//防止过多访问造成卡顿 直接结束
-	}
-}
-if($_SESSION['update']!=true){
-	$update=file_get_contents('http://auth.nanyinet.cn/api/check.php?url='.$_SERVER['HTTP_HOST']."&authcode=".$authcode."&ver=".$ver."&dbver=".$dbver);//获得json返回信息
-	$query=json_decode($update,true);//json解析
-	if($query['code']==1){//有新版本
-		$up='<font color="red">有新版本 <a href="./update.php">点我更新</a></font>';
-		$_SESSION['update']==true;//防止过多访问造成卡顿 有新版本
-	}elseif($query['code']==0){
-		$up='<font color="green">最新版本</font>';
-		$_SESSION['update']==true;//防止过多访问造成卡顿 直接结束
-	}elseif($query['code']==-1){
-		$up='<font color="red">盗版还想更新</font>';
-		$_SESSION['update']==true;//防止过多访问造成卡顿 直接结束
-	}
-}
-if($_SESSION['check_connet']!=true){
-	$check_result=file_get_contents('http://auth.nanyinet.cn/api/urlcheck.php?url='.$_SERVER['HTTP_HOST']);
-	if($check_result = 1){//服务器系统
-		$check='<font color="green">正版授权</font>';
-		$_SESSION['check_connet']==true;//防止过多访问造成卡顿
-	}else{
-		$check='<font color="red">非正版</font>';
-		$_SESSION['check_connet']==true;//防止过多访问造成卡顿 直接结束
-	}
-}
-if($_SESSION['gg']!=true){
-	$gg_result=file_get_contents('http://auth.nanyinet.cn/api/admingg.php');
-	if($gg_result){//服务器系统
-		$gg=$gg_result;
-		$_SESSION['gg']==true;//防止过多访问造成卡顿
-	}else{
-		$gg='获取公告失败！';
-		$_SESSION['gg']==true;//防止过多访问造成卡顿 直接结束
-	}
-}
+
 ?>
 <!DOCTYPE html>
 <html lang="zh">
